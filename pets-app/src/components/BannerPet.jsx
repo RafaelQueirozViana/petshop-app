@@ -8,8 +8,6 @@ const BannerPet = () => {
         style={styles.image}
       />
 
-      <View style={styles.overlay} />
-
       <View style={styles.content}>
         <Text style={styles.title}>Banho, tosa e tudo para seu pet.</Text>
 
@@ -42,11 +40,6 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
 
-  overlay: {
-    ...StyleSheet.absoluteFillObject,
-    backgroundColor: "rgba(0, 0, 0, 0.25)",
-  },
-
   content: {
     padding: 20,
     gap: 14,
@@ -65,12 +58,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     paddingHorizontal: 18,
     alignSelf: "flex-start",
-    borderRadius: 8,
+    borderRadius: 4,
+    width: "100%",
   },
 
   buttonText: {
     fontSize: 15,
     fontWeight: "bold",
-    color: "#222222",
+    color: "#ffffff",
   },
 });
