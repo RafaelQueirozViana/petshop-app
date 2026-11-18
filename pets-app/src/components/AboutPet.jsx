@@ -1,15 +1,21 @@
-import { StyleSheet, Text, View } from "react-native";
+import { View, Text, Image, StyleSheet } from "react-native";
 
 const AboutPet = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>SOBRE A PETFLASH</Text>
+      <Image
+        source={require("../../assets/images/poster-petshop.jpg")}
+        style={styles.image}
+        resizeMode="cover"
+      />
 
-      <Text style={styles.description}>
-        Cuidamos do seu pet com carinho, atenção e qualidade. Nosso objetivo é
-        proporcionar o melhor cuidado, garantindo conforto e bem-estar para seu
-        melhor amigo.
-      </Text>
+      <View style={styles.content}>
+        <Text style={styles.title}>Desde 2012 no bairro.</Text>
+
+        <Text style={styles.description}>
+          Espaço amplo para você e seu pet.
+        </Text>
+      </View>
     </View>
   );
 };
@@ -18,20 +24,27 @@ export default AboutPet;
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
-    backgroundColor: "#FFF8E8",
+    backgroundColor: "#FFFFFF",
+  },
+
+  image: {
+    width: "100%",
+    height: 220,
+  },
+
+  content: {
+    padding: 16,
+    gap: 5,
   },
 
   title: {
-    fontSize: 16,
+    fontSize: 22,
     fontWeight: "bold",
-    color: "#D69C00",
-    marginBottom: 12,
+    color: "#222222",
   },
 
   description: {
-    fontSize: 14,
-    lineHeight: 22,
-    color: "#555555",
+    fontSize: 13,
+    color: "#666666",
   },
 });
