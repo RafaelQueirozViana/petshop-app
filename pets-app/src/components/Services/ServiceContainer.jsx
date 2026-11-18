@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
   },
 
   serviceContainer: {
+    display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-between",

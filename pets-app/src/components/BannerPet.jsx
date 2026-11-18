@@ -11,10 +11,7 @@ const BannerPet = () => {
       <View style={styles.content}>
         <Text style={styles.title}>Banho, tosa e tudo para seu pet.</Text>
 
-        <Pressable
-          style={styles.button}
-          onPress={() => console.log("Agendar banho")}
-        >
+        <Pressable style={styles.button}>
           <Text style={styles.buttonText}>Agendar banho →</Text>
         </Pressable>
       </View>
@@ -28,15 +25,12 @@ const styles = StyleSheet.create({
   bannerContainer: {
     height: 360,
     justifyContent: "flex-end",
-    overflow: "hidden",
     position: "relative",
-    backgroundColor: "#333333",
   },
 
   image: {
     width: "100%",
     height: "100%",
-    resizeMode: "cover",
     position: "absolute",
   },
 

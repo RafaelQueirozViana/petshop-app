@@ -4,14 +4,14 @@ import ProductCard from "./ProductCard";
 const products = [
   {
     id: 1,
-    name: "Ração Premium",
-    price: "R$ 89,90",
+    name: "Ração 10kg",
+    price: "R$ 189,90",
     image: require("../../../assets/images/produto1.webp"),
   },
   {
     id: 2,
-    name: "Shampoo Pet",
-    price: "R$ 29,90",
+    name: "Arranhador",
+    price: "R$ 129,99",
     image: require("../../../assets/images/produto2.jpg"),
   },
   {
