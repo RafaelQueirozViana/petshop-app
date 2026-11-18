@@ -1,10 +1,10 @@
-import { StyleSheet, View, ScrollView, StatusBar } from "react-native";
+import { StyleSheet, View, ScrollView, StatusBar, Text } from "react-native";
 
 import Header from "../components/Header";
 import BannerPet from "../components/BannerPet";
 import ServiceContainer from "../components/Services/ServiceContainer";
 import ProductContainer from "../components/Products/ProductContainer";
-import Poster from "../components/Poster";
+import AboutPet from "../components/AboutPet";
 import PromoBanner from "../components/PromoBanner";
 
 const HomeScreen = () => {
@@ -21,9 +21,11 @@ const HomeScreen = () => {
 
         <ProductContainer />
 
-        <Poster />
+        <AboutPet />
 
         <PromoBanner />
+
+        <Text style={styles.location}>Rua das flores, 120. Seg-Sáb 9h-19h</Text>
       </ScrollView>
     </View>
   );
@@ -35,5 +37,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#FFFFFF",
+  },
+  location: {
+    padding: "16px",
+    fontSize: "17px",
   },
 });
