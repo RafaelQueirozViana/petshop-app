@@ -16,7 +16,7 @@ export default ServiceCard;
 
 const styles = StyleSheet.create({
   card: {
-    width: "48%",
+    width: "100%",
     backgroundColor: "#FFFFFF",
     borderRadius: 12,
     overflow: "hidden",

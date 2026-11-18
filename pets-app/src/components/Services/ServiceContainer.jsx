@@ -57,10 +57,9 @@ const styles = StyleSheet.create({
   },
 
   serviceContainer: {
-    display: "flex",
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "space-between",
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+
     gap: 12,
   },
 });
