@@ -1,16 +1,4 @@
-import Header from "@/components/Header";
-import BannerPet from "@/components/BannerPet";
-import { Text, View, StyleSheet } from "react-native";
-
+import HomeScreen from "../pages/HomeScreen";
 export default function Index() {
-  return (
-    <View>
-      <Header/>
-     <BannerPet/>
-    </View>
-  );
+  return <HomeScreen />;
 }
-
-const styles = StyleSheet.create({
-
-});

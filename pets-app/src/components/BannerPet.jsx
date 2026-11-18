@@ -1,5 +1,4 @@
 import { StyleSheet, Text, View, Image, Pressable } from "react-native";
-import React from "react";
 
 const BannerPet = () => {
   return (
@@ -9,10 +8,15 @@ const BannerPet = () => {
         style={styles.image}
       />
 
+      <View style={styles.overlay} />
+
       <View style={styles.content}>
         <Text style={styles.title}>Banho, tosa e tudo para seu pet.</Text>
 
-        <Pressable style={styles.button}>
+        <Pressable
+          style={styles.button}
+          onPress={() => console.log("Agendar banho")}
+        >
           <Text style={styles.buttonText}>Agendar banho →</Text>
         </Pressable>
       </View>
@@ -24,10 +28,11 @@ export default BannerPet;
 
 const styles = StyleSheet.create({
   bannerContainer: {
-    height: 340,
+    height: 360,
     justifyContent: "flex-end",
     overflow: "hidden",
     position: "relative",
+    backgroundColor: "#333333",
   },
 
   image: {
@@ -37,29 +42,35 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
 
+  overlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: "rgba(0, 0, 0, 0.25)",
+  },
+
   content: {
-    padding: 16,
-    gap: 12,
+    padding: 20,
+    gap: 14,
   },
 
   title: {
     color: "#FFFFFF",
-    fontSize: 28,
+    fontSize: 30,
     fontWeight: "bold",
+    maxWidth: 320,
   },
 
   button: {
     height: 48,
     backgroundColor: "#F2AE12",
     justifyContent: "center",
-    paddingHorizontal: 16,
+    paddingHorizontal: 18,
     alignSelf: "flex-start",
     borderRadius: 8,
   },
 
   buttonText: {
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: "bold",
-    color: "#FFFFFF",
+    color: "#222222",
   },
 });
