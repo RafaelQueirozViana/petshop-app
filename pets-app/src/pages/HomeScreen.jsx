@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import BannerPet from "../components/BannerPet";
 import ServiceContainer from "../components/Services/ServiceContainer";
 import ProductContainer from "../components/Products/ProductContainer";
-import AboutPet from "../components/AboutPet";
+import Poster from "../components/Poster";
 import PromoBanner from "../components/PromoBanner";
 
 const HomeScreen = () => {
@@ -21,7 +21,7 @@ const HomeScreen = () => {
 
         <ProductContainer />
 
-        <AboutPet />
+        <Poster />
 
         <PromoBanner />
       </ScrollView>
