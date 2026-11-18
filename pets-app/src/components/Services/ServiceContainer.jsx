@@ -5,22 +5,22 @@ const services = [
   {
     id: 1,
     name: "Banho",
-    image: require("../../assets/images/banho.png"),
+    image: require("../../../assets/images/banho.jpg"),
   },
   {
     id: 2,
     name: "Tosa",
-    image: require("../../assets/images/tosa.png"),
+    image: require("../../../assets/images/cachorroTosa.jpg"),
   },
   {
     id: 3,
     name: "Hidratação",
-    image: require("../../assets/images/hidratacao.png"),
+    image: require("../../../assets/images/hidratacao.jpg"),
   },
   {
     id: 4,
     name: "Leva e traz",
-    image: require("../../assets/images/leva-e-traz.png"),
+    image: require("../../../assets/images/transporteCachorro.jpg"),
   },
 ];
 
